@@ -23,7 +23,7 @@ class Holiday
 
       	$this->client = new Client();
    	}
-   	//Holiday holiday = new Holiday;
+   	
 	public static function init()
 	{
 		return new self;
