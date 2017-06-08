@@ -10,4 +10,4 @@ require_once __DIR__ .'/../vendor/autoload.php';
 
 use afiqiqmal\CountryHoliday\Holiday;
 
-echo Holiday::init()->country("india")->getAllRegionHoliday()->get();
+echo Holiday::init()->country("usa")->getRegionHoliday("arizona","2017")->get();

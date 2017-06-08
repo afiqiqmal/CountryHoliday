@@ -11,28 +11,29 @@ Holidays in current years
 
 Holidays in specific years
 
-`Holiday::init()->country("usa")->getAllRegionHoliday("2017")->get();`
+`Holiday::init()->country("malaysia")->getAllRegionHoliday("2017")->get();`
 
 Holidays by regional
 
-`Holiday::init()->country("usa")->getRegionHoliday("Selangor")->get();`
+`Holiday::init()->country("uae")->getRegionHoliday("Selangor")->get();`
 
 Holidays by regional in 2017
 
-`Holiday::init()->country("usa")->getRegionHoliday("Selangor","2017")->get();`
+`Holiday::init()->country("usa")->getRegionHoliday("arizona","2017")->get();`
 
 
 Grouping and Filter result
 
-`Holiday::init()->country("usa")->getAllRegionHoliday()->groupByMonth()->get();`
+`Holiday::init()->country("india")->getAllRegionHoliday()->groupByMonth()->get();`
 
-`Holiday::init()->country("usa")->getAllRegionHoliday()->filterByMonth("January")->get();  //date('F')	`
+`Holiday::init()->country("malaysia")->getAllRegionHoliday()->filterByMonth("January")->get();  //date('F')	`
 
 
 ### install
 
 not complete yet
-`composer require afiqiqmal/malaysiaholiday`
+
+`composer require afiqiqmal/countryholiday`
 
 
 ### Source
