@@ -31,8 +31,6 @@ Grouping and Filter result
 
 ### install
 
-not complete yet
-
 `composer require afiqiqmal/countryholiday`
 
 
