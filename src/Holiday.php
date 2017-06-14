@@ -149,12 +149,14 @@ class Holiday
 					$temp['name'] = trim($node->children()->eq(2)->text());
 					$temp['description'] = trim($node->children()->eq(3)->text());
 
+					$temp['status'] = true;
 					switch ($node->extract('class')[0]) {
 							case 'govt_holiday':
 								$temp['type'] = "Government/Public Sector Holiday";
 								break;
 							case 'publicholiday':
 								$temp['type'] = "Not a Public Holiday";
+								$temp['status'] = false;
 								break;
 							case 'holiday':
 								$temp['type'] = "National Holiday";
