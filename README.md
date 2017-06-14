@@ -7,31 +7,50 @@ get holiday list from selected country
 
 Holidays in current years
 
-`Holiday::init()->country("malaysia")->getAllRegionHoliday()->get();`
+<pre>
+Holiday::init()->country("malaysia")->getAllRegionHoliday()->get();
+</pre>
 
 Holidays in specific years
 
-`Holiday::init()->country("malaysia")->getAllRegionHoliday("2017")->get();`
+<pre>
+Holiday::init()->country("malaysia")->getAllRegionHoliday("2017")->get();
+</pre>
 
 Holidays by regional
 
-`Holiday::init()->country("uae")->getRegionHoliday("Selangor")->get();`
+<pre>
+Holiday::init()->country("uae")->getRegionHoliday("Selangor")->get();
+</pre>
 
 Holidays by regional in 2017
 
-`Holiday::init()->country("usa")->getRegionHoliday("arizona","2017")->get();`
+<pre>
+Holiday::init()->country("usa")->getRegionHoliday("arizona","2017")->get();
+</pre>
 
 
 Grouping and Filter result
 
-`Holiday::init()->country("india")->getAllRegionHoliday()->groupByMonth()->get();`
-
-`Holiday::init()->country("malaysia")->getAllRegionHoliday()->filterByMonth("January")->get();  //date('F')	`
+<pre>
+Holiday::init()->country("india")->getAllRegionHoliday()->groupByMonth()->get();
+Holiday::init()->country("malaysia")->getAllRegionHoliday()->filterByMonth("January")->get();  //date('F')
+</pre>
 
 
 ### install
 
-`composer require afiqiqmal/countryholiday`
+<pre>
+composer require afiqiqmal/countryholiday
+</pre>
+
+Or
+
+<pre>
+require{
+	"afiqiqmal/countryholiday": "^1.0.0"
+}
+</pre>
 
 
 ### Source
